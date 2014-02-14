@@ -110,8 +110,12 @@ module.exports = {
     };
 
     for (var key in kv) {
-      redisCluster.execute('set', key, kv[key]);
-      test.expect(redisCluster.execute('get', key), kv[key]);
+      redisCluster.execute('set', key, kv[key], function(err, result) {
+        redisCluster.execute('get', key, function(err, result) {
+          test.equals(result, kv[key]);
+        });
+      });
+
     }
     test.done();
   },
