@@ -11,7 +11,7 @@ Supports Rediska Consistent Hashing Algorithm Port.
   var RedisCluster = require('node-redis-cluster');
 
   var redis = new RedisCluster({
-    servers : ['127.0.0.1:6379'],
+    servers : [{ host : '127.0.0.1', port : 6379, db : 0 }],
     redisFactory : Redis,
     distributor : KeyDistributor
   });
