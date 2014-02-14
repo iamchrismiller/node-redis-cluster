@@ -1,10 +1,11 @@
 {
-  "name": "node-rediska-key-distributor",
+  "name": "node-redis-cluster",
   "version": "0.0.1",
-  "main": "lib/KeyDistributor",
+  "main": "lib/RedisCluster",
   "devDependencies": {
     "grunt": "~0.4.2",
-    "grunt-contrib-nodeunit": "~0.3.0"
+    "grunt-contrib-nodeunit": "~0.3.0",
+    "node-rediska-key-distributor": "git+ssh://git@git.onehealth.com:javascript/node-rediska-key-distributor.git"
   },
   "dependencies": {
     "grunt": "~0.4.2",

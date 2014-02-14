@@ -1,14 +1,24 @@
-## Rediska Key Distributor Algorithm Port PHP -> Javascript
+## Node Redis Cluster Container
 
 # Description
 
-Using Rediska's Default Hashing Algorithm has restricted our use to PHP only.
-We need to be able to Connect to the right instance of Redis Via Node using the same algorithm.
-
+Container For Redis Clustering.
+Supports Rediska Consistent Hashing Algorithm Port.
 
 # Usage
 
+```
+  var RedisCluster = require('node-redis-cluster');
 
+  var redis = new RedisCluster({
+    servers : ['127.0.0.1:6379'],
+    redisFactory : Redis,
+    distributor : KeyDistributor
+  });
+
+  redis.execute(COMMAND[,ARGS,...]);
+
+```
 
 # Install Instructions
 `npm install`
@@ -19,4 +29,4 @@ We need to be able to Connect to the right instance of Redis Via Node using the 
 
 #Using Library
 
-`npm install node-rediska-hash`
+`npm install node-redis-cluster`
