@@ -5,7 +5,7 @@
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-contrib-nodeunit": "~0.3.0",
-    "node-rediska-key-distributor": "git+ssh://git@git.onehealth.com:javascript/node-rediska-key-distributor.git"
+    "node-rediska-key-distributor": "git+ssh://git@github.com:iamchrismiller/rediska-key-distributor.git"
   },
   "dependencies": {
     "grunt": "~0.4.2",

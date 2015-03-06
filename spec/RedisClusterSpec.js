@@ -2,7 +2,7 @@
 "use strict";
 
 var RedisCluster = require('./../lib/RedisCluster');
-var KeyDistributor = require('node-rediska-key-distributor');
+var KeyDistributor = require('rediska-key-distributor');
 
 var redis = require("redis-mock");
 
